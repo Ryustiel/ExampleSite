@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luma Fizz | Sparkling Water With a Bright Bounce</title>
+    <meta
+      name="description"
+      content="Luma Fizz makes crisp sparkling water in bright fruit and botanical flavors, with a playful fizz experience built for desktop and mobile."
+    >
+    <link rel="canonical" href="https://pizzabella.rouf.me/">
+    <meta property="og:title" content="Luma Fizz Sparkling Water">
+    <meta property="og:description" content="Crisp sparkling water, bright bottles, and a playful fizz animation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pizzabella.rouf.me/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#f9f7ef">
+    <link rel="stylesheet" href="styles.css?v=20260522">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://pizzabella.rouf.me/#organization",
+        "name": "Luma Fizz",
+        "url": "https://pizzabella.rouf.me/",
+        "description": "Luma Fizz makes crisp sparkling water in fruit and botanical flavors.",
+        "sameAs": []
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Luma Fizz home">
+        <span class="brand-mark" aria-hidden="true">LF</span>
+        <span>Luma Fizz</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a aria-current="page" href="index.html">Home</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="home-title">
+        <canvas class="fizz-canvas" data-fizz-canvas role="img">
+          Animated bouncing fizz ball.
+        </canvas>
+        <div class="hero-glass" aria-hidden="true">
+          <div class="bottle-art" data-bottle>
+            <span class="bottle-cap"></span>
+            <span class="bottle-neck"></span>
+            <span class="bottle-body">
+              <strong data-bottle-label>Citrus Beam</strong>
+              <small>sparkling water</small>
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-copy">
+          <p class="kicker">Sparkling water</p>
+          <h1 id="home-title">Luma Fizz</h1>
+          <p class="hero-lead">
+            Bright bubbles, clean minerals, and fruit-forward flavors bottled for a quick lift.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#flavors">Taste the lineup</a>
+            <a class="button button-secondary" href="about.html">Famous bottles</a>
+          </div>
+          <dl class="quick-facts">
+            <div>
+              <dt>0g</dt>
+              <dd>Sugar</dd>
+            </div>
+            <div>
+              <dt>5</dt>
+              <dd>Bright flavors</dd>
+            </div>
+            <div>
+              <dt>100%</dt>
+              <dd>Recyclable glass</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section flavor-section" id="flavors" aria-labelledby="flavors-title">
+        <div class="section-heading">
+          <p class="kicker">Flavors</p>
+          <h2 id="flavors-title">Small bottles with a big pop.</h2>
+        </div>
+
+        <div class="flavor-controls" role="group" aria-label="Flavor palette">
+          <button class="flavor-chip is-active" type="button" data-flavor="citrus" aria-pressed="true">Citrus</button>
+          <button class="flavor-chip" type="button" data-flavor="berry" aria-pressed="false">Berry</button>
+          <button class="flavor-chip" type="button" data-flavor="mint" aria-pressed="false">Mint</button>
+          <button class="flavor-chip" type="button" data-flavor="peach" aria-pressed="false">Peach</button>
+        </div>
+
+        <div class="flavor-grid">
+          <article class="flavor-card">
+            <span class="swatch swatch-citrus" aria-hidden="true"></span>
+            <h3>Citrus Beam</h3>
+            <p>Lemon peel, lime zest, and a dry mineral finish.</p>
+          </article>
+          <article class="flavor-card">
+            <span class="swatch swatch-berry" aria-hidden="true"></span>
+            <h3>Berry Flicker</h3>
+            <p>Raspberry, blackcurrant, and a crisp soda-shop snap.</p>
+          </article>
+          <article class="flavor-card">
+            <span class="swatch swatch-mint" aria-hidden="true"></span>
+            <h3>Mint Current</h3>
+            <p>Cucumber, garden mint, and a cold clean sparkle.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section play-section" aria-labelledby="play-title">
+        <div class="section-heading">
+          <p class="kicker">Fizz dial</p>
+          <h2 id="play-title">Set the sparkle.</h2>
+        </div>
+        <div class="play-panel">
+          <label class="fizz-range">
+            <span>Bubble level</span>
+            <input type="range" min="1" max="5" value="3" data-fizz-range>
+          </label>
+          <button class="button button-primary" type="button" data-burst>Pop</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Luma Fizz sparkling water.</p>
+      <a href="about.html">About the bottles</a>
+    </footer>
+
+    <script src="app.js?v=20260522" defer></script>
+  </body>
+</html>
